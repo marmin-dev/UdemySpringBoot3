@@ -14,7 +14,7 @@ public class SimpleContextGamingAppLauncher {
 
     public static void main(String[] args) {
         try(var context= new AnnotationConfigApplicationContext(
-                SimpleContextGamingAppLauncher.class
+                com.marmin.learnspringframwork.examples.a1.SimpleContextGamingAppLauncher.class
         )){
             Arrays.stream(context.getBeanDefinitionNames()).forEach(System.out::println);
         }
